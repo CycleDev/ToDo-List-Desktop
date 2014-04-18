@@ -4,15 +4,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="550.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nao.cycledev.todolist.desk.HomeController">
+<AnchorPane prefHeight="550.0" prefWidth="420.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="nao.cycledev.todolist.desk.HomeController">
 	<children>
-		<ListView fx:id="lvEvents" layoutX="10.0" layoutY="10.0" prefHeight="550.0" prefWidth="420.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-		<HBox alignment="CENTER" layoutX="34.0" layoutY="500.0" prefHeight="35.0" prefWidth="400.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+		<HBox alignment="CENTER" layoutX="34.0" layoutY="500.0"
+			prefHeight="35.0" prefWidth="400.0" spacing="10.0"
+			AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+			AnchorPane.rightAnchor="10.0">
 			<children>
 				<Button fx:id="btnNew" mnemonicParsing="false" styleClass="button-new" />
 				<Button fx:id="btnEdit" mnemonicParsing="false" styleClass="button-edit" />
 				<Button fx:id="btnDelete" mnemonicParsing="false" styleClass="button-delete" />
 			</children>
 		</HBox>
+		<TableView fx:id="tvEvents" layoutX="14.0" layoutY="14.0"
+			prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0"
+			AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+			AnchorPane.topAnchor="10.0">
+			<columns>
+				<TableColumn editable="false" prefWidth="38.0" sortable="false" />
+				<TableColumn fx:id="colEventTitle" editable="false"
+					prefWidth="357.0" text="Event" />
+			</columns>
+		</TableView>
 	</children>
 </AnchorPane>
