@@ -4,7 +4,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +29,7 @@ public class MainApp extends Application {
 
         stage.setTitle("ToDo List");
         stage.setScene(scene);
+        stage.getIcons().add(new Image("/images/cubes_grey_32.png"));
         stage.show();
         logger.debug("ToDo List application loaded and showed");
     }
