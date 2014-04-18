@@ -34,8 +34,7 @@ public class HomeController {
 	@FXML
     private void initialize() {
 		logger.debug("Initialize HomeController");
-		colEventTitle.setCellValueFactory(new PropertyValueFactory<Event, String>("eventTitle"));
-		
+		colEventTitle.setCellValueFactory(new PropertyValueFactory<Event, String>("eventTitle"));		
 		tvEvents.setItems(eventData);
 	}
 	
@@ -43,10 +42,10 @@ public class HomeController {
 	private void handleDeleteEvent() {
 	  int selectedIndex = tvEvents.getSelectionModel().getSelectedIndex();
 	  if (selectedIndex >= 0) {
-		  tvEvents.getItems().remove(selectedIndex);
+		  logger.debug("Deleting event: " + selectedIndex);
+		  tvEvents.getItems().remove(selectedIndex);		  
 	  } else {
 		  logger.debug("No event selected");	   
 	  }
 	}
-
 }

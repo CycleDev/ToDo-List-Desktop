@@ -48,5 +48,4 @@ public class Event {
 	public void setEventStatus(int eventStatus) {
 		this.eventStatus = eventStatus;
 	}
-
 }
