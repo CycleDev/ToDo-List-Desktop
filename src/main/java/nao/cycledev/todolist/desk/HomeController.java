@@ -38,5 +38,15 @@ public class HomeController {
 		
 		tvEvents.setItems(eventData);
 	}
+	
+	@FXML
+	private void handleDeleteEvent() {
+	  int selectedIndex = tvEvents.getSelectionModel().getSelectedIndex();
+	  if (selectedIndex >= 0) {
+		  tvEvents.getItems().remove(selectedIndex);
+	  } else {
+		  logger.debug("No event selected");	   
+	  }
+	}
 
 }

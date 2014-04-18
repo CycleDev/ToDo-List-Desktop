@@ -10,7 +10,7 @@
 			<children>
 				<Button fx:id="btnNew" mnemonicParsing="false" styleClass="button-new" />
 				<Button fx:id="btnEdit" mnemonicParsing="false" styleClass="button-edit" />
-				<Button fx:id="btnDelete" mnemonicParsing="false" styleClass="button-delete" />
+				<Button fx:id="btnDelete" mnemonicParsing="false" onAction="#handleDeleteEvent" styleClass="button-delete" />
 			</children>
 		</HBox>
 		<TableView fx:id="tvEvents" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
