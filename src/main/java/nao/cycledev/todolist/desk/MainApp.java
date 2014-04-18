@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class MainApp extends Application {
 
-    private static final Logger log = LoggerFactory.getLogger(MainApp.class);
+    private static final Logger logger = LoggerFactory.getLogger(MainApp.class);
 		
     public static void main(String[] args) throws Exception {
         launch(args);
@@ -18,7 +18,7 @@ public class MainApp extends Application {
 
     public void start(Stage stage) throws Exception {
 
-        log.debug("Starting ToDo List application");
+    	logger.debug("Starting ToDo List application");
         FXMLLoader loader = new FXMLLoader();
         Parent rootNode = (Parent)loader.load(getClass().getResourceAsStream("/fxml/Home.fxml"));
 
@@ -28,6 +28,6 @@ public class MainApp extends Application {
         stage.setTitle("ToDo List");
         stage.setScene(scene);
         stage.show();
-        log.debug("ToDo List application loaded and showed");
+        logger.debug("ToDo List application loaded and showed");
     }
 }
