@@ -53,7 +53,10 @@ public class HomeController {
 		Event selectedEvent = tvEvents.getSelectionModel().getSelectedItem();
 		if (selectedEvent != null) {
 			logger.debug("Edit event: " + selectedEvent.getEventId() + " - " + selectedEvent.getEventTitle());
-			mainApp.showPersonEditDialog(selectedEvent);
+			if (mainApp.showEventDialog(selectedEvent)) {
+				//eventData.get(selectedEvent)
+			}
+				
 		} else {
 			logger.debug("No event selected for editing");
 		}
@@ -62,15 +65,14 @@ public class HomeController {
 	@FXML
 	private void handleNewEvent() {
 		Event event = new Event();		
-		mainApp.showPersonEditDialog(event);
+		mainApp.showEventDialog(event);
 
 		logger.debug("Created new event:");
 	}
 	
 	  public void setMainApp(MainApp mainApp) {
+		  
 	        this.mainApp = mainApp;
-	        // Add observable list data to the table
-	        //personTable.setItems(mainApp.getPersonData());
-	    }
+	  }
 
 }

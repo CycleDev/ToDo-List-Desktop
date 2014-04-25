@@ -22,14 +22,17 @@ public class EventDialogController {
     private boolean okClicked = false;
     
     public void setDialogStage(Stage dialogStage) {
+    	
         this.dialogStage = dialogStage;
+        
     }
 	
 	@FXML
 	private void handleOKEvent() {
 		
-		logger.debug("handleOKEvent");
-		
+		logger.debug("handleOKEvent");		
+		event.setEventTitle(txtEventTitle.getText().trim());
+		event.setEventDescription(txtEventDesc.getText().trim());		
 		okClicked = true;
 		dialogStage.close();
 	 
@@ -38,8 +41,7 @@ public class EventDialogController {
 	@FXML
 	private void handleCancelEvent() {
 		
-		logger.debug("handleCancelEvent");
-		
+		logger.debug("handleCancelEvent");		
 		dialogStage.close();
 	 
 	}

@@ -44,7 +44,7 @@ public class MainApp extends Application {
         logger.debug("ToDo List application loaded and showed");
     }
     
-	public boolean showPersonEditDialog(Event event) {
+	public boolean showEventDialog(Event event) {
 		try {
 			// Load the fxml file and create a new stage for the popup
 			FXMLLoader loader = new FXMLLoader();
@@ -54,6 +54,7 @@ public class MainApp extends Application {
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.initOwner(primaryStage);
 			Scene scene = new Scene(page);
+			dialogStage.getIcons().add(new Image("/images/cubes_grey_32.png"));
 			dialogStage.setScene(scene);
 
 			// Set the event into the controller
@@ -70,9 +71,7 @@ public class MainApp extends Application {
 			// Exception gets thrown if the fxml file could not be loaded
 			e.printStackTrace();
 			logger.error(e.getMessage());
-			return false;
-			
-			
+			return false;				
 		}
 	}
   
