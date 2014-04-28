@@ -1,6 +1,5 @@
 package nao.cycledev.todolist.desk;
 
-import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,6 +11,8 @@ import javafx.stage.Stage;
 import nao.cycledev.todolist.desk.model.Event;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
 
 public class MainApp extends Application {
 
@@ -30,9 +31,7 @@ public class MainApp extends Application {
         Parent rootNode = (Parent)loader.load(getClass().getResourceAsStream("/fxml/Home.fxml"));
         primaryStage = stage;
         Scene scene = new Scene(rootNode, 420, 550);
-        logger.debug("Load CSS");
-        
-        // Give the controller access to the main app
+
         HomeController controller = loader.getController();
         controller.setMainApp(this);
         
@@ -54,6 +53,7 @@ public class MainApp extends Application {
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.initOwner(primaryStage);
 			Scene scene = new Scene(page);
+            scene.getStylesheets().add("/styles/styles.css");
 			dialogStage.getIcons().add(new Image("/images/cubes_grey_32.png"));
 			dialogStage.setScene(scene);
 
