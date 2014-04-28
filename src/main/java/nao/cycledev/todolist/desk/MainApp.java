@@ -30,12 +30,12 @@ public class MainApp extends Application {
     	logger.debug("Load Home window");
         Parent rootNode = (Parent)loader.load(getClass().getResourceAsStream("/fxml/Home.fxml"));
         primaryStage = stage;
-        Scene scene = new Scene(rootNode, 420, 550);
+        Scene scene = new Scene(rootNode, 800, 600);
 
         HomeController controller = loader.getController();
         controller.setMainApp(this);
         
-        scene.getStylesheets().add("/styles/styles.css");
+        //scene.getStylesheets().add("/styles/styles.css");
         stage.setTitle("ToDo List");
         stage.setScene(scene);
         stage.getIcons().add(new Image("/images/cubes_grey_32.png"));
@@ -53,7 +53,7 @@ public class MainApp extends Application {
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.initOwner(primaryStage);
 			Scene scene = new Scene(page);
-            scene.getStylesheets().add("/styles/styles.css");
+            //scene.getStylesheets().add("/styles/styles.css");
 			dialogStage.getIcons().add(new Image("/images/cubes_grey_32.png"));
 			dialogStage.setScene(scene);
 
