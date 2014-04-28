@@ -40,6 +40,7 @@ public class EventManager {
     }
 
     private int addEvent(Event event) {
+        logger.debug("addEvent");
         Session session = DBUtil.getSessionFactory().openSession();
         Integer eventID = -1;
         Transaction tran = null;
@@ -59,6 +60,7 @@ public class EventManager {
     }
 
     private void updateEvent(Event event){
+        logger.debug("updateEvent");
         Session session = DBUtil.getSessionFactory().openSession();
         Transaction tran = null;
         try{
@@ -76,6 +78,7 @@ public class EventManager {
     }
 
     public void saveEvent(Event event){
+        logger.debug("saveEvent");
         if (event.getEventId() > 0){
                 updateEvent(event);
         }else{
@@ -84,6 +87,7 @@ public class EventManager {
     }
 
     public void deleteEvent(Integer eventID){
+        logger.debug("deleteEvent");
         Session session = DBUtil.getSessionFactory().openSession();
         Transaction tran = null;
         try{
