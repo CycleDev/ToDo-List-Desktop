@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="929593183">
-    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="772ca46b-3547-4728-9326-ad5315389cb1">
+  <component name="DataSourceManagerImpl" format="xml" hash="1118337421">
+    <data-source source="LOCAL" name="MySQL - test@localhost" uuid="9eb5e9aa-7ec1-423f-b43c-d4a041d91eee">
       <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://sql3.freemysqlhosting.net/sql336322</jdbc-url>
-      <user-name>sql336322</user-name>
-      <user-password>dfd8dfefdf93df8bdfcddff9df93df8f</user-password>
+      <jdbc-url>jdbc:mysql://localhost/test</jdbc-url>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+      </driver-properties>
       <libraries />
     </data-source>
   </component>

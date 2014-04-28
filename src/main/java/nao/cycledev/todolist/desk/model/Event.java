@@ -1,20 +1,39 @@
 package nao.cycledev.todolist.desk.model;
 
-public class Event {
-	
-	private int eventId;	
-	private String eventTitle;	
-	private String eventDescription;	
-	private int eventStatus;
-	
-	public Event() { }
+import javax.persistence.*;
+import java.util.Date;
 
-	public Event(int eventId, String eventTitle, String eventDescription, int eventStatus) {
+@Entity
+@Table(name = "event")
+public class Event {
+
+    @Id @GeneratedValue
+    @Column(name = "ID")
+	private int eventId;
+
+    @Column(name = "EventTitle")
+	private String eventTitle;
+
+    @Column(name = "EventDesc")
+	private String eventDescription;
+
+    @Column(name = "Status")
+	private int eventStatus;
+
+    @Column(name = "Created")
+    private Date eventCreated;
+	
+	public Event() {
+
+        this.eventCreated = new Date();
+    }
+
+	public Event(String eventTitle, String eventDescription, int eventStatus) {
 		super();
-		this.eventId = eventId;
 		this.eventTitle = eventTitle;
 		this.eventDescription = eventDescription;
 		this.eventStatus = eventStatus;
+
 	}
 	
 	public int getEventId() {
@@ -48,4 +67,9 @@ public class Event {
 	public void setEventStatus(int eventStatus) {
 		this.eventStatus = eventStatus;
 	}
+
+    public Date getEventCreated() {
+        return eventCreated;
+    }
+
 }

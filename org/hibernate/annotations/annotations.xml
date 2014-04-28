@@ -1,0 +1,5 @@
+<root>
+    <item name='org.hibernate.annotations.Entity'>
+        <annotation name='java.lang.annotation.Deprecated'/>
+    </item>
+</root>

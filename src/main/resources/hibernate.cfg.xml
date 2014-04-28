@@ -4,22 +4,13 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<property name="hibernate.dialect">
-			org.hibernate.dialect.MySQLDialect
-		</property>
-		<property name="hibernate.connection.driver_class">
-			com.mysql.jdbc.Driver
-		</property>
-		<property name="hibernate.connection.url">
-			jdbc:mysql://sql3.freemysqlhosting.net/sql336322
-		</property>
-		<property name="hibernate.connection.username">
-			sql336322
-		</property>
-		<property name="hibernate.connection.password">
-			rE9!gS9%
-		</property>
-		
-		<!-- <mapping class="nao.cycledev.ss.model.User"/> -->
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/test</property>
+		<property name="hibernate.connection.username"></property>
+		<property name="hibernate.connection.password"></property>
+
+		<mapping class="nao.cycledev.todolist.desk.model.Event"/>
 	</session-factory>
 </hibernate-configuration>

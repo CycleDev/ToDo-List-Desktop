@@ -1,5 +1,6 @@
 package nao.cycledev.todolist.desk;
 
+import nao.cycledev.todolist.desk.datamanager.EventManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import javafx.collections.FXCollections;
@@ -15,6 +16,8 @@ public class HomeController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	private ObservableList<Event> eventData = FXCollections.observableArrayList();	
 	private MainApp mainApp;
+    private EventManager dataManager;
+
 
 	@FXML
 	private TableView<Event> tvEvents;
@@ -23,18 +26,19 @@ public class HomeController {
 
 	public HomeController() {
 		logger.debug("Create HomeController");
-		eventData.add(new Event(1, "Event 1", "Event 1111", 1));
+		/*eventData.add(new Event(1, "Event 1", "Event 1111", 1));
 		eventData.add(new Event(2, "Event 2", "Event 2222", 1));
 		eventData.add(new Event(3, "Event 3", "Event 3333", 2));
 		eventData.add(new Event(4, "Event 4", "Event 4444", 1));
-		eventData.add(new Event(5, "Event 5", "Event 5555", 2));
+		eventData.add(new Event(5, "Event 5", "Event 5555", 2));*/
 	}
 
 	@FXML
 	private void initialize() {
 		logger.debug("Initialize HomeController");
+        dataManager = new EventManager();
 		colEventTitle.setCellValueFactory(new PropertyValueFactory<Event, String>("eventTitle"));
-		tvEvents.setItems(eventData);
+		tvEvents.setItems(dataManager.getEvents());
 	}
 
 	@FXML
@@ -43,6 +47,7 @@ public class HomeController {
 		if (selectedIndex >= 0) {
 			logger.debug("Deleting event: " + selectedIndex);
 			tvEvents.getItems().remove(selectedIndex);
+            dataManager.deleteEvent(selectedIndex);
 		} else {
 			logger.debug("No event selected");
 		}
@@ -54,7 +59,8 @@ public class HomeController {
 		if (selectedEvent != null) {
 			logger.debug("Edit event: " + selectedEvent.getEventId() + " - " + selectedEvent.getEventTitle());
 			if (mainApp.showEventDialog(selectedEvent)) {
-				//eventData.get(selectedEvent)
+                tvEvents.setItems(dataManager.getEvents());
+                //tvEvents.getSelectionModel().setSelectedIndex(selectedEvent.getEventId());
 			}
 				
 		} else {
@@ -66,13 +72,11 @@ public class HomeController {
 	private void handleNewEvent() {
 		Event event = new Event();		
 		mainApp.showEventDialog(event);
-
-		logger.debug("Created new event:");
+        tvEvents.setItems(dataManager.getEvents());
+ 	    logger.debug("Created new event:");
 	}
 	
-	  public void setMainApp(MainApp mainApp) {
-		  
-	        this.mainApp = mainApp;
-	  }
-
+    public void setMainApp(MainApp mainApp) {
+        this.mainApp = mainApp;
+    }
 }
