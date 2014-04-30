@@ -3,7 +3,6 @@ package nao.cycledev.todolist.desk;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import nao.cycledev.todolist.desk.datamanager.EventManager;
 import nao.cycledev.todolist.desk.model.Event;
 import org.slf4j.Logger;
@@ -22,10 +21,10 @@ public class HomeController {
 
 	@FXML
 	private void initialize() {
-		logger.debug("Initialize HomeController");
+		logger.debug("Home screen initialize");
         dataManager = new EventManager();
-		colEventTitle.setCellValueFactory(new PropertyValueFactory<Event, String>("eventTitle"));
-		tvEvents.setItems(dataManager.getEvents());
+		//colEventTitle.setCellValueFactory(new PropertyValueFactory<Event, String>("eventTitle"));
+		//tvEvents.setItems(dataManager.getEvents());
 	}
 
 	@FXML
