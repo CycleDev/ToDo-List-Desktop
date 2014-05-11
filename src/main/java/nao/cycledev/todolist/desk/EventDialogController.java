@@ -14,7 +14,7 @@ public class EventDialogController {
     private static final Logger logger = LoggerFactory.getLogger(EventDialogController.class);
     private EventManager dataManager = new EventManager();
     private Stage dialogStage;
-    private Event event;
+    //private Event event;
     private boolean okClicked = false;
 
 	@FXML
@@ -31,10 +31,10 @@ public class EventDialogController {
 	private void handleOKEvent() {
 		
 		logger.debug("handleOKEvent");		
-		event.setEventTitle(txtEventTitle.getText().trim());
-		event.setEventDescription(txtEventDesc.getText().trim());
+		//event.setEventTitle(txtEventTitle.getText().trim());
+		//event.setEventDescription(txtEventDesc.getText().trim());
 
-        dataManager.saveEvent(event);
+       // dataManager.saveEvent(event);
 
 		okClicked = true;
 		dialogStage.close();
@@ -54,8 +54,8 @@ public class EventDialogController {
 	}
 	
 	public void setEvent(Event event) {
-		this.event = event;
-		txtEventTitle.setText(this.event.getEventTitle());
-		txtEventDesc.setText(this.event.getEventDescription());
+		//this.event = event;
+		//txtEventTitle.setText(this.event.getEventTitle());
+		//txtEventDesc.setText(this.event.getEventDescription());
 	}
 }

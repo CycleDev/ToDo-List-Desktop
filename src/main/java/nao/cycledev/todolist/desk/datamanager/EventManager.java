@@ -1,20 +1,8 @@
 package nao.cycledev.todolist.desk.datamanager;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import nao.cycledev.todolist.desk.model.Event;
-import nao.cycledev.todolist.desk.util.DBUtil;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.List;
-
 public class EventManager {
 
-    private static final Logger logger = LoggerFactory.getLogger(EventManager.class);
+    /*private static final Logger logger = LoggerFactory.getLogger(EventManager.class);
 
     public ObservableList<Event> getEvents() {
         logger.debug("getEvents");
@@ -103,5 +91,5 @@ public class EventManager {
         }finally {
             session.close();
         }
-    }
+    }*/
 }

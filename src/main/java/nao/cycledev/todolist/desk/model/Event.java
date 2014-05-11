@@ -1,13 +1,10 @@
 package nao.cycledev.todolist.desk.model;
 
-import javax.persistence.*;
-import java.util.Date;
-
-@Entity
-@Table(name = "event")
+//@Entity
+//@Table(name = "event")
 public class Event {
 
-    @Id @GeneratedValue
+    /*@Id @GeneratedValue
     @Column(name = "ID")
 	private int eventId;
 
@@ -70,6 +67,6 @@ public class Event {
 
     public Date getEventCreated() {
         return eventCreated;
-    }
+    }*/
 
 }

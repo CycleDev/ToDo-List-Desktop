@@ -53,19 +53,21 @@
         </dependency>
         <!-- End Logging -->
 
-		<!-- Hibernate -->
+		<!-- Hibernate
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>4.3.5.Final</version>
 		</dependency>
-		<!-- End Hibernate -->
+		End Hibernate -->
 
+        <!-- MySQL
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.6</version>
 		</dependency>
+		MySQL -->
 
         <!-- SQLite
         <dependency>
@@ -74,6 +76,20 @@
             <version>3.7.2</version>
         </dependency>
         -->
+
+        <!-- CouchDB -->
+        <dependency>
+            <groupId>org.ektorp</groupId>
+            <artifactId>org.ektorp</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+        <!-- CouchDB -->
 
         <!-- Test -->
         <dependency>

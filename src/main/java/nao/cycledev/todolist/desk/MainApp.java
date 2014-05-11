@@ -57,7 +57,7 @@ public class MainApp extends Application {
 			dialogStage.getIcons().add(new Image("/images/cubes_grey_32.png"));
 			dialogStage.setScene(scene);
 
-			// Set the event into the controller
+            // Set the event into the controller
 			EventDialogController controller = loader.getController();
 			controller.setDialogStage(dialogStage);
 			controller.setEvent(event);
