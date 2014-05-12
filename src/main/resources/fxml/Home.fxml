@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import nao.cycledev.todolist.desk.component.ProjectComponent?>
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nao.cycledev.todolist.desk.HomeController">
     <children>
         <SplitPane dividerPositions="0.3658940397350993" focusTraversable="true" layoutX="14.0" layoutY="14.0" prefHeight="541.0" prefWidth="609.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="63.0">
             <items>
-                <AnchorPane fx:id="apProjects" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="166.0">
+                <VBox fx:id="apProjects" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="166.0">
                     <children>
-                        
+                        <ProjectComponent fx:id="pcProjects"/>
                     </children>
-                </AnchorPane>
+                </VBox>
                 <AnchorPane fx:id="apTasks" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="258.0">
                     <children>
                                             </children>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbProjects" prefHeight="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nao.cycledev.todolist.desk.ProjectComponentController">
+    <children>
+        <TableView fx:id="tvProjects" prefHeight="900.0">
+            <columns>
+                <TableColumn prefWidth="30.0" />
+                <TableColumn fx:id="tcProjectName" text="Project" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>

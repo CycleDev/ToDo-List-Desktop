@@ -5,14 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import nao.cycledev.todolist.desk.model.Event;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
 
 public class MainApp extends Application {
 
@@ -34,7 +29,7 @@ public class MainApp extends Application {
 
         HomeController controller = loader.getController();
         controller.setMainApp(this);
-        
+
         //scene.getStylesheets().add("/styles/styles.css");
         stage.setTitle("ToDo List");
         stage.setScene(scene);
@@ -43,7 +38,7 @@ public class MainApp extends Application {
         logger.debug("ToDo List application loaded and showed");
     }
     
-	public boolean showEventDialog(Event event) {
+/*	public boolean showEventDialog(Event event) {
 		try {
 			// Load the fxml file and create a new stage for the popup
 			FXMLLoader loader = new FXMLLoader();
@@ -73,6 +68,5 @@ public class MainApp extends Application {
 			logger.error(e.getMessage());
 			return false;				
 		}
-	}
-  
+	}*/
 }

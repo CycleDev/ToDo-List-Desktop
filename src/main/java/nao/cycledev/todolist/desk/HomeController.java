@@ -1,11 +1,8 @@
 package nao.cycledev.todolist.desk;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.layout.AnchorPane;
-import nao.cycledev.todolist.desk.datamanager.EventManager;
-import nao.cycledev.todolist.desk.model.Event;
+import javafx.scene.layout.VBox;
+import nao.cycledev.todolist.desk.component.ProjectComponent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,37 +10,24 @@ public class HomeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	private MainApp mainApp;
-    private EventManager dataManager;
-
-	@FXML
-	private TableView<Event> tvEvents;
-	@FXML
-	private TableColumn<Event, String> colEventTitle;
 
     @FXML
-    AnchorPane apProjects;
+    VBox apProjects;
 
-	@FXML
-	private void initialize() {
-		logger.debug("Home screen initialize");
-
-
-        //dataManager = new EventManager();
-		//colEventTitle.setCellValueFactory(new PropertyValueFactory<Event, String>("eventTitle"));
-		//tvEvents.setItems(dataManager.getEvents());
-	}
+    @FXML
+    ProjectComponent pcProjects;
 
 	@FXML
 	private void handleDeleteEvent() {
-		Event selectedEvent = tvEvents.getSelectionModel().getSelectedItem();
-		if (selectedEvent != null) {
+		//Event selectedEvent = tvEvents.getSelectionModel().getSelectedItem();
+		//if (selectedEvent != null) {
             //dataManager.deleteEvent(selectedEvent.getEventId());
             //tvEvents.setItems(dataManager.getEvents());
-            tvEvents.getSelectionModel().selectLast();
-            logger.debug("Event deleted");
-		} else {
+            //tvEvents.getSelectionModel().selectLast();
+        //    logger.debug("Event deleted");
+		//} else {
 			logger.debug("No event selected for deleting");
-		}
+		//}
 	}
 
 	@FXML
