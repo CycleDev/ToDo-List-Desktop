@@ -10,12 +10,19 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import nao.cycledev.todolist.desk.datamanager.ProjectDataManager;
 import nao.cycledev.todolist.desk.model.Project;
 import nao.cycledev.todolist.desk.util.CouchDBUtil;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class ProjectComponentController implements Initializable {
+	
+	private static final Logger logger = LoggerFactory.getLogger(ProjectComponentController.class);
+	
     @FXML
     TableView tvProjects;
 
@@ -24,15 +31,14 @@ public class ProjectComponentController implements Initializable {
 
     ProjectDataManager projectDataManager;
 
-    @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         tcProjectName.setCellValueFactory(new PropertyValueFactory<Project, String>("projectTitle"));
 
-        try {
+       try {
             projectDataManager = new ProjectDataManager(CouchDBUtil.getCouchDbConnector());
         } catch (MalformedURLException e) {
-            e.printStackTrace();
+        	logger.error(e.getMessage());
         }
         LoadProjects();
     }
