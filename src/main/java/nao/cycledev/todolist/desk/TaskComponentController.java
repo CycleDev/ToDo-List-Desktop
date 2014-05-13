@@ -1,10 +1,10 @@
 package nao.cycledev.todolist.desk;
 
+import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
 
-public class TaskComponentController implements Initializable {
+public class TaskComponentController extends BaseController implements Initializable {
 	
 	 public void initialize(URL location, ResourceBundle resources) {
 		 

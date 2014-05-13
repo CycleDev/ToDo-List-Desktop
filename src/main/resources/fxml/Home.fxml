@@ -5,24 +5,24 @@
 <?import nao.cycledev.todolist.desk.component.ProjectComponent?>
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nao.cycledev.todolist.desk.HomeController">
     <children>
-        <SplitPane dividerPositions="0.3658940397350993" focusTraversable="true" layoutX="14.0" layoutY="14.0" prefHeight="541.0" prefWidth="609.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="63.0">
+        <SplitPane dividerPositions="0.3658940397350993" focusTraversable="true" layoutX="14.0" layoutY="14.0" prefHeight="541.0" prefWidth="609.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="70.0">
             <items>
                 <VBox fx:id="apProjects" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="166.0">
                     <children>
                         <ProjectComponent fx:id="pcProjects"/>
                     </children>
                 </VBox>
-                <AnchorPane fx:id="apTasks" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="258.0">
+                <VBox fx:id="apTasks" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="258.0">
                     <children>
-                                            </children>
-                </AnchorPane>
+                    </children>
+                </VBox>
             </items>
         </SplitPane>
-        <ToolBar layoutX="5.0" layoutY="42.0" prefHeight="7.0" prefWidth="606.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <ToolBar layoutX="5.0" layoutY="42.0" prefHeight="40.0" prefWidth="606.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
             <items>
-                <Button fx:id="btnAddProject" mnemonicParsing="false" />
-                <Button fx:id="btnEditProject" mnemonicParsing="false" />
-                <Button fx:id="btnDeleteProject" mnemonicParsing="false" />
+                <Button fx:id="btnAddProject" mnemonicParsing="false" styleClass="button-new"/>
+                <Button fx:id="btnEditProject" mnemonicParsing="false" styleClass="button-edit"/>
+                <Button fx:id="btnDeleteProject" mnemonicParsing="false" styleClass="button-delete" onAction="#handleDeleteProject"/>
             </items>
         </ToolBar>
         <MenuBar layoutX="5.0" layoutY="2.0" prefHeight="25.0" prefWidth="606.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

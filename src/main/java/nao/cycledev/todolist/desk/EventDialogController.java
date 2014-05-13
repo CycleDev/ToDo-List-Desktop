@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class EventDialogController {
+public class EventDialogController extends BaseController{
 
     private static final Logger logger = LoggerFactory.getLogger(EventDialogController.class);
     //private EventManager dataManager = new EventManager();

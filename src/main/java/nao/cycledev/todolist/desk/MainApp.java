@@ -23,14 +23,14 @@ public class MainApp extends Application {
     	logger.debug("Starting ToDo List application");
         FXMLLoader loader = new FXMLLoader();
     	logger.debug("Load Home window");
-        Parent rootNode = (Parent)loader.load(getClass().getResourceAsStream("/fxml/Home.fxml"));
+        Parent rootNode = (Parent)loader.load(getClass().getResourceAsStream("/fxml/home.fxml"));
         primaryStage = stage;
         Scene scene = new Scene(rootNode, 800, 600);
 
         HomeController controller = loader.getController();
         controller.setMainApp(this);
 
-        //scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/styles.css");
         stage.setTitle("ToDo List");
         stage.setScene(scene);
         stage.getIcons().add(new Image("/images/cubes_grey_32.png"));
