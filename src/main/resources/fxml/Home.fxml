@@ -20,8 +20,8 @@
         </SplitPane>
         <ToolBar layoutX="5.0" layoutY="42.0" prefHeight="40.0" prefWidth="606.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
             <items>
-                <Button fx:id="btnAddProject" mnemonicParsing="false" styleClass="button-new"/>
-                <Button fx:id="btnEditProject" mnemonicParsing="false" styleClass="button-edit"/>
+                <Button fx:id="btnAddProject" mnemonicParsing="false" styleClass="button-new" onAction="#handleNewProject"/>
+                <Button fx:id="btnEditProject" mnemonicParsing="false" styleClass="button-edit" onAction="#handleEditProject"/>
                 <Button fx:id="btnDeleteProject" mnemonicParsing="false" styleClass="button-delete" onAction="#handleDeleteProject"/>
             </items>
         </ToolBar>

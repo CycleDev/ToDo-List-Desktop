@@ -27,6 +27,8 @@ public class HomeController extends BaseController implements Initializable {
     private ProjectDataManager projectDataManager;
 
     private ProjectComponentController projectComponentController;
+    
+    int i = 0;
 
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -44,7 +46,7 @@ public class HomeController extends BaseController implements Initializable {
         Project selectedProject = projectComponentController.getSelectedProject();
 
         if (selectedProject != null) {
-            logger.debug("Project is removing");
+            logger.debug("Project " + selectedProject.getProjectTitle() + " is removing");
             projectComponentController.RemoveProject(selectedProject);
         } else {
             logger.debug("No project selected for deleting");
@@ -56,13 +58,8 @@ public class HomeController extends BaseController implements Initializable {
         Project selectedProject = projectComponentController.getSelectedProject();
 
         if (selectedProject != null) {
-            logger.debug("Project is editing");
-			//int selectedIndex = tvEvents.getSelectionModel().getSelectedIndex();
-            //if (mainApp.showEventDialog(selectedEvent)) {
-                //tvEvents.setItems(dataManager.getEvents());
-                //tvEvents.getSelectionModel().select(selectedIndex);
-            //    logger.debug("Event edited");
- 			//}
+            logger.debug("Project " + selectedProject.getProjectTitle() + " is editing");
+            projectComponentController.UpdateProject(selectedProject);			
 		} else {
 			logger.debug("No project selected for editing");
 		}
@@ -71,10 +68,14 @@ public class HomeController extends BaseController implements Initializable {
 	@FXML
 	private void handleNewProject() {
 		Project project = new Project();
+		project.setProjectTitle("Project" + i);
+		project.setProjectDesc("Desc" + i);
+		i++;
+		
 		//mainApp.showEventDialog(event);
-        //tvEvents.setItems(dataManager.getEvents());
-        //tvEvents.getSelectionModel().selectLast();
- 	    logger.debug("New project is created");
+        		
+		projectComponentController.CreateProject(project);	
+ 	    logger.debug("Project " + project.getProjectTitle() + " is created");
 	}
 	
     public void setMainApp(MainApp mainApp) {

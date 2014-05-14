@@ -57,6 +57,20 @@ public class ProjectComponentController extends BaseController implements Initia
     public void RemoveProject(Project project) {
         projectDataManager.remove(project);
         LoadProjects();
+        tvProjects.getSelectionModel().selectLast();
+    }
+    
+    public void UpdateProject(Project project) {
+    	int selectedIndex = tvProjects.getSelectionModel().getSelectedIndex();
+    	projectDataManager.update(project);
+    	LoadProjects();
+    	tvProjects.getSelectionModel().select(selectedIndex);    	
+    }
+    
+    public void CreateProject(Project project) {
+        projectDataManager.add(project);
+        LoadProjects();
+        tvProjects.getSelectionModel().selectLast();
     }
 
     public Project getSelectedProject() {
