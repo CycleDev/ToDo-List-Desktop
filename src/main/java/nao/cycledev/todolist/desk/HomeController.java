@@ -4,11 +4,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.VBox;
 import nao.cycledev.todolist.desk.component.ProjectComponent;
+import nao.cycledev.todolist.desk.component.TaskComponent;
 import nao.cycledev.todolist.desk.datamanager.ProjectDataManager;
 import nao.cycledev.todolist.desk.model.Project;
 import nao.cycledev.todolist.desk.util.CouchDBUtil;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,6 +26,9 @@ public class HomeController extends BaseController implements Initializable {
 
     @FXML
     private ProjectComponent pcProjects;
+    
+    @FXML 
+    private TaskComponent tcTasks;
 
     private ProjectDataManager projectDataManager;
 

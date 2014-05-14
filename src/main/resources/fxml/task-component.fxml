@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="472.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nao.cycledev.todolist.desk.TaskController">
+<AnchorPane prefHeight="472.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nao.cycledev.todolist.desk.TaskComponentController">
 	<children>
 		<ToolBar layoutX="14.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 			<items>
@@ -13,6 +13,7 @@
 				<Button mnemonicParsing="false" />
 			</items>
 		</ToolBar>
+		
 		<SplitPane dividerPositions="0.6459770114942529" focusTraversable="true" layoutX="14.0" layoutY="47.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
 			<items>
 				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
@@ -32,5 +33,6 @@
 				</AnchorPane>
 			</items>
 		</SplitPane>
+		
 	</children>
 </AnchorPane>
