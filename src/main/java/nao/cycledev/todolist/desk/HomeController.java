@@ -45,6 +45,7 @@ public class HomeController extends BaseController implements Initializable {
         }
 
         projectComponentController = (ProjectComponentController)pcProjects.getController();
+        projectComponentController.setTaskComponent(tcTasks);
     }
 
 	@FXML

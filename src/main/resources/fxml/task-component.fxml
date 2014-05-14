@@ -8,9 +8,9 @@
 	<children>
 		<ToolBar layoutX="14.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 			<items>
-				<Button mnemonicParsing="false" />
-				<Button mnemonicParsing="false" />
-				<Button mnemonicParsing="false" />
+				<Button mnemonicParsing="false" onAction="#handleNewTask"/>
+				<Button mnemonicParsing="false" onAction="#handleEditTask"/>
+				<Button mnemonicParsing="false" onAction="#handleDeleteTask"/>
 			</items>
 		</ToolBar>
 		
@@ -18,10 +18,10 @@
 			<items>
 				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
 					<children>
-						<TableView layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+						<TableView fx:id="tvTasks" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
 							<columns>
-								<TableColumn prefWidth="75.0" text="Project" />
-								<TableColumn prefWidth="75.0" text="C2" />
+								<TableColumn prefWidth="30.0" />
+								<TableColumn prefWidth="150.0" text="Task" fx:id="tcTaskTitle" />
 							</columns>
 						</TableView>
 					</children>

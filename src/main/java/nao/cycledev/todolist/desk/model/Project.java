@@ -27,4 +27,15 @@ public class Project extends CouchDbDocument {
     public void setProjectDesc(String projectDesc) {
         this.projectDesc = projectDesc;
     }
+
+/*    @DocumentReferences(backReference = "projectId", fetch = FetchType.LAZY)
+    Set<Task> tasks;
+
+    public Set<Task> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(Set<Task> tasks) {
+        this.tasks = tasks;
+    }*/
 }

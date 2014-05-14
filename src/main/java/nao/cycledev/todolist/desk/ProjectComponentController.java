@@ -1,5 +1,7 @@
 package nao.cycledev.todolist.desk;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -7,6 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import nao.cycledev.todolist.desk.component.TaskComponent;
 import nao.cycledev.todolist.desk.datamanager.ProjectDataManager;
 import nao.cycledev.todolist.desk.model.Project;
 import nao.cycledev.todolist.desk.util.CouchDBUtil;
@@ -30,15 +33,31 @@ public class ProjectComponentController extends BaseController implements Initia
 
     private ProjectDataManager projectDataManager;
 
+    private TaskComponent taskComponent;
+
+    public void setTaskComponent(TaskComponent taskComponent) {
+        this.taskComponent = taskComponent;
+    }
+
     public void initialize(URL location, ResourceBundle resources) {
 
         tcProjectName.setCellValueFactory(new PropertyValueFactory<Project, String>("projectTitle"));
+        tvProjects.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 
         try {
             projectDataManager = new ProjectDataManager(CouchDBUtil.getCouchDbConnector());
         } catch (MalformedURLException e) {
         	logger.error(e.getMessage());
         }
+
+        tvProjects.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Project>() {
+
+            @Override
+            public void changed(ObservableValue<? extends Project> observable, Project oldValue, Project newValue) {
+                //showPersonDetails(newValue);
+            }
+        });
+
         LoadProjects();
     }
 
