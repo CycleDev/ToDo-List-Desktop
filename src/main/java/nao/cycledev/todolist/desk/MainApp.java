@@ -23,7 +23,7 @@ public class MainApp extends Application {
     	logger.debug("Starting ToDo List application");
         FXMLLoader loader = new FXMLLoader();
     	logger.debug("Load Home window");
-        Parent rootNode = (Parent)loader.load(getClass().getResourceAsStream("/fxml/home.fxml"));
+        Parent rootNode = (Parent)loader.load(getClass().getResourceAsStream("/fxml/Home.fxml"));
         primaryStage = stage;
         Scene scene = new Scene(rootNode, 800, 600);
 
