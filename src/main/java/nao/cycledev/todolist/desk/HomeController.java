@@ -71,7 +71,6 @@ public class HomeController extends BaseController implements Initializable {
 
         tvProjects.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Project>() {
 
-            @Override
             public void changed(ObservableValue<? extends Project> observable, Project oldValue, Project newValue) {
                 selectedProject = (Project)newValue;
                 LoadTasks();
