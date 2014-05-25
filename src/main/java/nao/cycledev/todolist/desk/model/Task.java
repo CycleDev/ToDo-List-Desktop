@@ -5,18 +5,9 @@ import org.ektorp.support.CouchDbDocument;
 
 public class Task extends CouchDbDocument{
 
-    private int projectId;
 	private String taskTitle;
 	private String taskDesc;
 
-    public int getProjectId() {
-        return projectId;
-    }
-
-    public void setProjectId(int projectId) {
-        this.projectId = projectId;
-    }
-	
 	@JsonProperty("task_title")
 	public String getTaskTitle() {
 		return taskTitle;

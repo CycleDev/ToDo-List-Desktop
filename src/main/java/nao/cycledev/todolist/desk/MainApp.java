@@ -30,7 +30,7 @@ public class MainApp extends Application {
         HomeController controller = loader.getController();
         controller.setMainApp(this);
 
-        scene.getStylesheets().add("/styles/styles.css");
+        scene.getStylesheets().add("/styles/style-light.css");
         stage.setTitle("ToDo List");
         stage.setScene(scene);
         stage.getIcons().add(new Image("/images/cubes_grey_32.png"));

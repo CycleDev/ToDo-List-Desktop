@@ -49,6 +49,8 @@ public class HomeController extends BaseController implements Initializable {
 
     private TaskDataManager taskDataManager;
 
+    private Project selectedProject;
+
     //</editor-fold>
     
     int i = 0;
@@ -56,6 +58,9 @@ public class HomeController extends BaseController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         tcProjectName.setCellValueFactory(new PropertyValueFactory<Project, String>("projectTitle"));
         tvProjects.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+
+        tcTaskTitle.setCellValueFactory(new PropertyValueFactory<Project, String>("taskTitle"));
+        tvTasks.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 
         try {
             projectDataManager = new ProjectDataManager(CouchDBUtil.getCouchDbConnector());
@@ -68,7 +73,8 @@ public class HomeController extends BaseController implements Initializable {
 
             @Override
             public void changed(ObservableValue<? extends Project> observable, Project oldValue, Project newValue) {
-                //showPersonDetails(newValue);
+                selectedProject = (Project)newValue;
+                LoadTasks();
             }
         });
 
@@ -83,7 +89,6 @@ public class HomeController extends BaseController implements Initializable {
 
 	@FXML
 	private void handleDeleteProject() {
-        Project selectedProject = getSelectedProject();
 
         if (selectedProject != null) {
             logger.debug("Project " + selectedProject.getProjectTitle() + " is removing");
@@ -91,11 +96,11 @@ public class HomeController extends BaseController implements Initializable {
         } else {
             logger.debug("No project selected for deleting");
         }
+
 	}
 
 	@FXML
 	private void handleEditProject() {
-        Project selectedProject = getSelectedProject();
 
         if (selectedProject != null) {
             logger.debug("Project " + selectedProject.getProjectTitle() + " is editing");
@@ -110,7 +115,16 @@ public class HomeController extends BaseController implements Initializable {
 		Project project = new Project();
 		project.setProjectTitle("Project" + i);
 		project.setProjectDesc("Desc" + i);
+
+        Task task = new Task();
+        task.setTaskTitle("Task" + i);
+        task.setTaskDesc("Desc" + i);
+        project.getTasks().add(task);
 		i++;
+        Task task1 = new Task();
+        task1.setTaskTitle("Task" + i);
+        task1.setTaskDesc("Desc" + i);
+        project.getTasks().add(task1);
 		
         projectDataManager.add(project);
  	    logger.debug("Project " + project.getProjectTitle() + " is created");
@@ -126,11 +140,6 @@ public class HomeController extends BaseController implements Initializable {
         }
 
         tvProjects.setItems(projectData);
-    }
-
-    private Project getSelectedProject() {
-
-        return (Project)tvProjects.getSelectionModel().getSelectedItem();
     }
 
     //</editor-fold>
@@ -183,9 +192,7 @@ public class HomeController extends BaseController implements Initializable {
     private void LoadTasks() {
         ObservableList<Task> taskData = FXCollections.observableArrayList();
 
-        List<Task> taskList = taskDataManager.getAll();
-
-        for (Object task : taskList) {
+        for (Object task : selectedProject.getTasks()) {
             taskData.add((Task)task);
         }
 
