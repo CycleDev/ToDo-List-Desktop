@@ -3,10 +3,18 @@ package nao.cycledev.todolist.desk.model;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.ektorp.support.CouchDbDocument;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Project extends CouchDbDocument {
 
     private String projectTitle;
     private String projectDesc;
+    private Set<Task> tasks;
+
+    public Project() {
+        tasks = new HashSet<>();
+    }
 
     @JsonProperty("project_title")
     public String getProjectTitle() {
@@ -28,14 +36,11 @@ public class Project extends CouchDbDocument {
         this.projectDesc = projectDesc;
     }
 
-/*  @DocumentReferences(backReference = "projectId", fetch = FetchType.LAZY)
-    Set<Task> tasks;
-
     public Set<Task> getTasks() {
         return tasks;
     }
 
     public void setTasks(Set<Task> tasks) {
         this.tasks = tasks;
-    }*/
+    }
 }

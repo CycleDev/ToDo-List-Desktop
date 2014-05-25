@@ -36,6 +36,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
+      <file leaf-file-name="Home.fxml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Home.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0765171" vertical-offset="782" max-vertical-offset="1377">
+              <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+=======
       <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,6 +62,94 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="820" max-vertical-offset="1853">
               <caret line="80" column="31" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="31" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="MainApp.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/MainApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+              <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+=======
+      <file leaf-file-name="ProjectDataManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/ProjectDataManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Project.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Project.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="884">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+=======
+      <file leaf-file-name="TaskDataManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/TaskDataManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29278794" vertical-offset="0" max-vertical-offset="929">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Task.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Task.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CouchDBUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/util/CouchDBUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="595">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="3077">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,23 +165,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskDataManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TaskDataManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/TaskDataManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29278794" vertical-offset="0" max-vertical-offset="929">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BaseController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/BaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+=======
       <file leaf-file-name="Project.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Project.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
               <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
               <folding />
             </state>
           </provider>
@@ -113,7 +213,6 @@
         <option value="dbtable:/8c147a4e/9eb5e9aa-7ec1-423f-b43c-d4a041d91eee/test..event" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/EventDialog.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/util/CouchDBUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/ProjectDataManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/EventManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Event.java" />
@@ -126,13 +225,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/fxml/task.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/projectcomponent.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/component/TaskComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/component/ProjectComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/EventDialogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/component/BaseComponent.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/home.fxml" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/TaskDataManager.java" />
+=======
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Task.java" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/util/CouchDBUtilTest.java" />
         <option value="$PROJECT_DIR$/src/test/nao/cycledev/todolist/desk/util/CouchDBUtilTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nao/cycledev/todolist/desk/util/CouchDBUtilTest.java" />
@@ -143,6 +245,11 @@
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/TaskComponentController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/ProjectComponentController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/styles/style-black.css" />
+        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/util/CouchDBUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/TaskDataManager.java" />
@@ -209,7 +316,10 @@
       <sortByType />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
       <pane id="Scope" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -393,10 +503,104 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desk" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToDo-List-Desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToDo-List-Desktop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desk" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToDo-List-Desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToDo-List-Desktop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desk" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datamanager" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToDo-List-Desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToDo-List-Desktop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,7 +612,11 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
     <property name="restartRequiresConfirmation" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -774,13 +982,22 @@
       <workItem from="1400087325920" duration="707000" />
       <workItem from="1400097355563" duration="2301000" />
       <workItem from="1400178075026" duration="10524000" />
+<<<<<<< HEAD
+      <workItem from="1400262739348" duration="720000" />
+      <workItem from="1401004676072" duration="3836000" />
+=======
       <workItem from="1400666281342" duration="191000" />
       <workItem from="1400666942962" duration="1883000" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="66642000" />
+=======
     <option name="totallyTimeSpent" value="64160000" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -803,7 +1020,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="-8" y="-8" width="1296" height="786" extended-state="0" />
+=======
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -827,8 +1048,13 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2584814" sideWeight="0.49886104" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17239584" sideWeight="0.49886104" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -863,6 +1089,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Home.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1853">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="3417">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3400">
@@ -879,20 +1135,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="1853">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Home.fxml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+=======
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836">
           <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="2142">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+=======
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="2091">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
@@ -900,6 +1167,7 @@
             <element signature="e#2091#2311#0" expanded="true" />
             <element signature="e#2300#2301#0" expanded="true" />
           </folding>
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
         </state>
       </provider>
     </entry>
@@ -907,6 +1175,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+<<<<<<< HEAD
+          <folding />
+=======
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
         </state>
       </provider>
     </entry>
@@ -929,11 +1201,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1496">
           <caret line="29" column="64" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+<<<<<<< HEAD
+          <folding />
+=======
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2091#2311#0" expanded="true" />
             <element signature="e#2300#2301#0" expanded="true" />
           </folding>
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
         </state>
       </provider>
     </entry>
@@ -948,11 +1224,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1428">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+<<<<<<< HEAD
+          <folding />
+=======
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2091#2311#0" expanded="true" />
             <element signature="e#2300#2301#0" expanded="true" />
           </folding>
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
         </state>
       </provider>
     </entry>
@@ -1068,13 +1348,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="1173">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/EventDialogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
@@ -1089,6 +1362,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
@@ -1097,6 +1372,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
     <entry file="file://$PROJECT_DIR$/src/main/deploy/package/windows/ToDo-List-Desktop.ico">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1128,22 +1404,47 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/styles/styles.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/util/DBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.85427135" vertical-offset="0" max-vertical-offset="476">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+=======
         <state vertical-scroll-proportion="0.49635038" vertical-offset="0" max-vertical-offset="1020">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/util/DBUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+=======
         <state vertical-scroll-proportion="0.85427135" vertical-offset="0" max-vertical-offset="476">
           <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/util/CouchDBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="595">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/TaskDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+=======
         <state vertical-scroll-proportion="0.20681265" vertical-offset="0" max-vertical-offset="595">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
         </state>
@@ -1153,6 +1454,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0042964" vertical-offset="0" max-vertical-offset="1836">
           <caret line="55" column="85" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
           <folding />
         </state>
       </provider>
@@ -1178,17 +1480,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Project.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.6505102" vertical-offset="85" max-vertical-offset="1853">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+=======
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+=======
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="820" max-vertical-offset="1853">
           <caret line="80" column="31" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="31" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
           <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/ProjectDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/model/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="884">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/TaskDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29278794" vertical-offset="0" max-vertical-offset="929">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> 515045d660183ba3a0d53acd944d39038979952f
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1200,13 +1562,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/datamanager/TaskDataManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29278794" vertical-offset="0" max-vertical-offset="929">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="3077">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Home.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0765171" vertical-offset="782" max-vertical-offset="1377">
+          <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
