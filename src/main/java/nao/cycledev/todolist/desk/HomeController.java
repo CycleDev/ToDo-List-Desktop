@@ -81,48 +81,46 @@ public class HomeController extends BaseController implements Initializable {
 
     //<editor-fold desc="Project functionality">
 
-	@FXML
-	private void handleDeleteProject() {
+    @FXML
+    private void handleNewProject() {
 
+        logger.debug("Add project");
+        Project project = new Project();
+        if (mainApp.showProjectDialog(project))
+        {
+            projectDataManager.add(project);
+            logger.debug("Project " + project.getProjectTitle() + " is created");
+        }
+
+    }
+
+	@FXML
+	private void handleEditProject() {
+
+        logger.debug("Edit project");
         if (selectedProject != null) {
-            logger.debug("Project " + selectedProject.getProjectTitle() + " is removing");
+            if (mainApp.showProjectDialog(selectedProject)){
+                projectDataManager.update(selectedProject);
+                logger.debug("Project " + selectedProject.getProjectTitle() + " is edited");
+            }
+		} else {
+			logger.debug("No project selected for editing");
+		}
+
+	}
+
+    @FXML
+    private void handleDeleteProject() {
+
+        logger.debug("Remove project");
+        if (selectedProject != null) {
+            logger.debug("Project " + selectedProject.getProjectTitle() + " is removed");
             projectDataManager.remove(selectedProject);
         } else {
             logger.debug("No project selected for deleting");
         }
 
-	}
-
-	@FXML
-	private void handleEditProject() {
-
-        if (selectedProject != null) {
-            logger.debug("Project " + selectedProject.getProjectTitle() + " is editing");
-            projectDataManager.update(selectedProject);
-		} else {
-			logger.debug("No project selected for editing");
-		}
-	}
-
-	@FXML
-	private void handleNewProject() {
-		Project project = new Project();
-		project.setProjectTitle("Project" + i);
-		project.setProjectDesc("Desc" + i);
-
-        Task task = new Task();
-        task.setTaskTitle("Task" + i);
-        task.setTaskDesc("Desc" + i);
-        project.getTasks().add(task);
-		i++;
-        Task task1 = new Task();
-        task1.setTaskTitle("Task" + i);
-        task1.setTaskDesc("Desc" + i);
-        project.getTasks().add(task1);
-		
-        projectDataManager.add(project);
- 	    logger.debug("Project " + project.getProjectTitle() + " is created");
-	}
+    }
 
     private void LoadProjects() {
         ObservableList<Project> projectData = FXCollections.observableArrayList();

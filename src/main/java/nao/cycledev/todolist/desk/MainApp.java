@@ -5,9 +5,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import nao.cycledev.todolist.desk.model.Project;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
 
 public class MainApp extends Application {
 
@@ -38,13 +43,13 @@ public class MainApp extends Application {
         logger.debug("ToDo List application loaded and showed");
     }
     
-/*	public boolean showEventDialog(Event event) {
+	public boolean showProjectDialog(Project project) {
 		try {
 			// Load the fxml file and create a new stage for the popup
 			FXMLLoader loader = new FXMLLoader();
 			AnchorPane page = (AnchorPane)loader.load(getClass().getResourceAsStream("/fxml/EventDialog.fxml"));
 			Stage dialogStage = new Stage();
-			dialogStage.setTitle("Event");
+			dialogStage.setTitle("Project");
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.initOwner(primaryStage);
 			Scene scene = new Scene(page);
@@ -55,7 +60,7 @@ public class MainApp extends Application {
             // Set the event into the controller
 			EventDialogController controller = loader.getController();
 			controller.setDialogStage(dialogStage);
-			controller.setEvent(event);
+			controller.setProject(project);
 
 			// Show the dialog and wait until the user closes it
 			dialogStage.showAndWait();
@@ -63,10 +68,9 @@ public class MainApp extends Application {
 			return controller.isOkClicked();
 
 		} catch (IOException e) {
-			// Exception gets thrown if the fxml file could not be loaded
-			e.printStackTrace();
-			logger.error(e.getMessage());
-			return false;				
-		}
-	}*/
+            // Exception gets thrown if the fxml file could not be loaded
+            logger.error(e.getMessage());
+            return false;
+        }
+    }
 }
