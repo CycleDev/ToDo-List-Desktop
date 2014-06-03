@@ -1,7 +1,6 @@
 package nao.cycledev.todolist.desk;
 
 import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -64,12 +63,9 @@ public class HomeController extends BaseController implements Initializable {
             logger.error(e.getMessage());
         }
 
-        tvProjects.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Project>() {
-
-            public void changed(ObservableValue<? extends Project> observable, Project oldValue, Project newValue) {
+        tvProjects.getSelectionModel().selectedItemProperty().addListener((ChangeListener)(observable, oldValue, newValue) -> {
                 selectedProject = (Project)newValue;
                 LoadTasks();
-            }
         });
 
         LoadProjects();
