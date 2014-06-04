@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2fa9ae7-fc95-4783-aa4b-1771e5d6e63a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToDo-List-Desktop.iml" afterPath="$PROJECT_DIR$/ToDo-List-Desktop.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ToDo-List-Desktop.iws" />
@@ -32,18 +31,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HomeController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2618">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#handleDeleteTask#0;class#HomeController#0" expanded="false" />
-                <element signature="method#handleEditTask#0;class#HomeController#0" expanded="false" />
-                <element signature="method#handleNewTask#0;class#HomeController#0" expanded="false" />
-                <element signature="method#LoadTasks#0;class#HomeController#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-2.326087" vertical-offset="1711" max-vertical-offset="2941">
+              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,16 +46,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1853">
               <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventDialogController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/EventDialogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6980676" vertical-offset="408" max-vertical-offset="1139">
-              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -483,12 +466,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -507,6 +484,12 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="ToDo-List" type="Application" factoryName="Application">
@@ -565,12 +548,13 @@
       <workItem from="1400178075026" duration="10524000" />
       <workItem from="1401218062628" duration="300000" />
       <workItem from="1401453851285" duration="3278000" />
-      <workItem from="1401824910941" duration="393000" />
+      <workItem from="1401824910941" duration="1178000" />
+      <workItem from="1401911428237" duration="770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66057000" />
+    <option name="totallyTimeSpent" value="67612000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -594,7 +578,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="786" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -618,7 +602,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25767368" sideWeight="0.49886104" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -655,15 +639,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="3332">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1853">
+          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/EventDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="725" max-vertical-offset="1139">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2720">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleDeleteTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleEditTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleNewTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#LoadTasks#0;class#HomeController#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +674,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="1394">
           <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -697,13 +699,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2499">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleDeleteTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleEditTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleNewTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#LoadTasks#0;class#HomeController#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -719,13 +715,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="2499">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleDeleteTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleEditTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleNewTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#LoadTasks#0;class#HomeController#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,13 +731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1496">
           <caret line="29" column="64" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleDeleteTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleEditTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleNewTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#LoadTasks#0;class#HomeController#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -755,13 +739,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1428">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleDeleteTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleEditTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleNewTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#LoadTasks#0;class#HomeController#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -783,8 +761,8 @@
             <node x="" y="">org.hibernate:hibernate-core:jar:4.3.5.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA</node>
             <node x="" y="">org.hibernate:hibernate-core:jar:4.3.5.Final/dom4j:dom4j:jar:1.6.1</node>
             <node x="" y="">org.slf4j:slf4j-api:jar:1.7.7</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:4.3.5.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
             <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.7.7/log4j:log4j:jar:1.2.17</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:4.3.5.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
             <node x="" y="">org.hibernate:hibernate-core:jar:4.3.5.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.0.Final</node>
             <node x="" y="">org.hibernate:hibernate-core:jar:4.3.5.Final</node>
             <node x="" y="">org.hibernate:hibernate-core:jar:4.3.5.Final/antlr:antlr:jar:2.7.7</node>
@@ -859,22 +837,16 @@
         <state vertical-scroll-proportion="0.5135135" vertical-offset="0" max-vertical-offset="1360">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/EventDialogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2618">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleDeleteTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleEditTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#handleNewTask#0;class#HomeController#0" expanded="false" />
-            <element signature="method#LoadTasks#0;class#HomeController#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.6486486" vertical-offset="0" max-vertical-offset="1139">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -886,10 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/EventDialogController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/todolist/desk/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6980676" vertical-offset="408" max-vertical-offset="1139">
-          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        <state vertical-scroll-proportion="-2.326087" vertical-offset="1711" max-vertical-offset="2941">
+          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
           <folding />
         </state>
       </provider>

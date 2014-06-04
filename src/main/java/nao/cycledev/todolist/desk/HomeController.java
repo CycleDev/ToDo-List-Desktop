@@ -54,7 +54,6 @@ public class HomeController extends BaseController implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
         tcProjectName.setCellValueFactory(new PropertyValueFactory<Project, String>("projectTitle"));
-
         tcTaskTitle.setCellValueFactory(new PropertyValueFactory<Project, String>("taskTitle"));
 
         try {
