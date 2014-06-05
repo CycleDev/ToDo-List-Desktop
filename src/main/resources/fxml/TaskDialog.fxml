@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="260.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="nao.cycledev.todolist.desk.TaskDialogController">
+    <children>
+        <TabPane layoutX="14.0" layoutY="78.0" prefHeight="219.0" prefWidth="291.0" tabClosingPolicy="UNAVAILABLE"
+                 AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0"
+                 AnchorPane.topAnchor="3.0">
+            <tabs>
+                <Tab text="General">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="14.0048828125" layoutY="14.0" text="Task name:"
+                                       AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0"/>
+                                <TextField fx:id="txtTaskName" layoutX="5.24609375" layoutY="29.5"
+                                           AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"
+                                           AnchorPane.topAnchor="25.0"/>
+                                <Label layoutX="5.0" layoutY="70.0" text="Priority:" AnchorPane.leftAnchor="5.0"
+                                       AnchorPane.topAnchor="63.0"/>
+                                <ComboBox fx:id="cbTaskPriority" layoutX="14.0" layoutY="82.0" prefHeight="25.0"
+                                          prefWidth="120.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="166.0"
+                                          AnchorPane.topAnchor="82.0"/>
+                                <CheckBox fx:id="cbTaskIsFinished" layoutX="152.0" layoutY="85.0"
+                                          mnemonicParsing="false" text="Task finished"/>
+                                <Label layoutX="152.0048828125" layoutY="61.0" text="Status:"
+                                       AnchorPane.topAnchor="62.0"/>
+                                <Label layoutX="0.0048828125" layoutY="119.5" text="Expiration date:"
+                                       AnchorPane.leftAnchor="5.0"/>
+                                <DatePicker fx:id="dpExpirationDate" layoutX="5.24609375" layoutY="139.5"
+                                            AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Remark">
+                    <content>
+                        <TextArea fx:id="txtTaskRemark" prefHeight="200.0" prefWidth="200.0">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </padding>
+                        </TextArea>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <HBox alignment="CENTER_RIGHT" layoutX="21.0" layoutY="238.0" prefHeight="30.0" prefWidth="287.0" spacing="5.0"
+              AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#handleOKEvent" text="OK"/>
+                <Button cancelButton="true" defaultButton="true" mnemonicParsing="false" onAction="#handleCancelEvent"
+                        text="Cancel"/>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

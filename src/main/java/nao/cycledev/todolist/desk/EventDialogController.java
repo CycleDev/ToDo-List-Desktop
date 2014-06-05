@@ -16,12 +16,9 @@ public class EventDialogController extends BaseController{
     private Project project;
     private boolean okClicked = false;
 
-	@FXML
-	private TextField txtEventTitle;
-	
-	@FXML
-	private TextArea txtEventDesc;
-	
+	@FXML private TextField txtEventTitle;
+	@FXML private TextArea txtEventDesc;
+
     public void setDialogStage(Stage dialogStage) {
 
         this.dialogStage = dialogStage;
@@ -34,8 +31,6 @@ public class EventDialogController extends BaseController{
 	    logger.debug("handleOKEvent");
         project.setProjectTitle(txtEventTitle.getText().trim());
 		project.setProjectDesc(txtEventDesc.getText().trim());
-
-       // dataManager.saveEvent(event);
 
 		okClicked = true;
 		dialogStage.close();

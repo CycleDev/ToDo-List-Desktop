@@ -34,7 +34,7 @@ public class HomeController extends BaseController implements Initializable {
     @FXML
     private TableColumn tcProjectName;
 
-    private ProjectDataManager projectDataManager;
+    private ProjectDataManager dataManager;
 
     //</editor-fold>
 
@@ -57,7 +57,7 @@ public class HomeController extends BaseController implements Initializable {
         tcTaskTitle.setCellValueFactory(new PropertyValueFactory<Project, String>("taskTitle"));
 
         try {
-            projectDataManager = new ProjectDataManager(CouchDBUtil.getCouchDbConnector());
+            dataManager = new ProjectDataManager(CouchDBUtil.getCouchDbConnector());
         } catch (MalformedURLException e) {
             logger.error(e.getMessage());
         }
@@ -83,7 +83,7 @@ public class HomeController extends BaseController implements Initializable {
         Project project = new Project();
         if (mainApp.showProjectDialog(project))
         {
-            projectDataManager.add(project);
+            dataManager.add(project);
             logger.debug("Project " + project.getProjectTitle() + " is created");
         }
 
@@ -95,7 +95,7 @@ public class HomeController extends BaseController implements Initializable {
         logger.debug("Edit project");
         if (selectedProject != null) {
             if (mainApp.showProjectDialog(selectedProject)){
-                projectDataManager.update(selectedProject);
+                dataManager.update(selectedProject);
                 logger.debug("Project " + selectedProject.getProjectTitle() + " is edited");
             }
 		} else {
@@ -109,8 +109,8 @@ public class HomeController extends BaseController implements Initializable {
 
         logger.debug("Remove project");
         if (selectedProject != null) {
+            dataManager.remove(selectedProject);
             logger.debug("Project " + selectedProject.getProjectTitle() + " is removed");
-            projectDataManager.remove(selectedProject);
         } else {
             logger.debug("No project selected for deleting");
         }
@@ -120,7 +120,7 @@ public class HomeController extends BaseController implements Initializable {
     private void LoadProjects() {
         ObservableList<Project> projectData = FXCollections.observableArrayList();
 
-        List<Project> projectList = projectDataManager.getAll();
+        List<Project> projectList = dataManager.getAll();
 
         for (Object project : projectList) {
             projectData.add((Project) project);
@@ -138,8 +138,10 @@ public class HomeController extends BaseController implements Initializable {
         Task selectedTask = getSelectedTask();
 
         if (selectedTask != null) {
-            logger.debug("Task " + selectedTask.getTaskTitle() + " is removing");
-            //taskDataManager.remove(selectedTask);
+            //dataManager.remove(selectedTask);
+            selectedProject.getTasks().remove(selectedTask);
+            dataManager.update(selectedProject);
+            logger.debug("Task " + selectedTask.getTaskTitle() + " is removed");
             LoadTasks();
             tvTasks.getSelectionModel().selectLast();
         } else {

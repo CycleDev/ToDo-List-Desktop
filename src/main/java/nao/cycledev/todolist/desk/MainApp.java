@@ -9,6 +9,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import nao.cycledev.todolist.desk.model.Project;
+import nao.cycledev.todolist.desk.model.Task;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -44,30 +45,58 @@ public class MainApp extends Application {
     }
     
 	public boolean showProjectDialog(Project project) {
-		try {
-			// Load the fxml file and create a new stage for the popup
-			FXMLLoader loader = new FXMLLoader();
-			AnchorPane page = (AnchorPane)loader.load(getClass().getResourceAsStream("/fxml/EventDialog.fxml"));
-			Stage dialogStage = new Stage();
-			dialogStage.setTitle("Project");
-			dialogStage.initModality(Modality.WINDOW_MODAL);
-			dialogStage.initOwner(primaryStage);
-			Scene scene = new Scene(page);
+        try {
+            // Load the fxml file and create a new stage for the popup
+            FXMLLoader loader = new FXMLLoader();
+            AnchorPane page = (AnchorPane)loader.load(getClass().getResourceAsStream("/fxml/EventDialog.fxml"));
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Project");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
             //scene.getStylesheets().add("/styles/styles.css");
-			dialogStage.getIcons().add(new Image("/images/cubes_grey_32.png"));
-			dialogStage.setScene(scene);
+            dialogStage.getIcons().add(new Image("/images/cubes_grey_32.png"));
+            dialogStage.setScene(scene);
 
             // Set the event into the controller
-			EventDialogController controller = loader.getController();
-			controller.setDialogStage(dialogStage);
-			controller.setProject(project);
+            EventDialogController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setProject(project);
 
-			// Show the dialog and wait until the user closes it
-			dialogStage.showAndWait();
+            // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
 
-			return controller.isOkClicked();
+            return controller.isOkClicked();
 
-		} catch (IOException e) {
+        } catch (IOException e) {
+            // Exception gets thrown if the fxml file could not be loaded
+            logger.error(e.getMessage());
+            return false;
+        }
+    }
+
+    public boolean showTaskDialog(Task task) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            AnchorPane page = (AnchorPane)loader.load(getClass().getResourceAsStream("/fxml/TaskDialog.fxml"));
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Task");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            //scene.getStylesheets().add("/styles/styles.css");
+            dialogStage.getIcons().add(new Image("/images/cubes_grey_32.png"));
+            dialogStage.setScene(scene);
+
+            TaskDialogController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setTask(task);
+
+            // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
+            return controller.isOkClicked();
+
+        } catch (IOException e) {
             // Exception gets thrown if the fxml file could not be loaded
             logger.error(e.getMessage());
             return false;
