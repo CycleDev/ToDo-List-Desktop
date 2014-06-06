@@ -9,4 +9,5 @@ public class ProjectDataManager extends CouchDbRepositorySupport<Project> {
     public ProjectDataManager(CouchDbConnector db) {
         super(Project.class, db);
     }
+
 }

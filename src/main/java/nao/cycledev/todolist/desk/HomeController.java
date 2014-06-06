@@ -47,11 +47,10 @@ public class HomeController extends BaseController implements Initializable {
     private TableColumn tcTaskTitle;
 
     private Project selectedProject;
+    private Task selectedTask;
 
     //</editor-fold>
     
-    int i = 0;
-
     public void initialize(URL location, ResourceBundle resources) {
         tcProjectName.setCellValueFactory(new PropertyValueFactory<Project, String>("projectTitle"));
         tcTaskTitle.setCellValueFactory(new PropertyValueFactory<Project, String>("taskTitle"));
@@ -65,6 +64,11 @@ public class HomeController extends BaseController implements Initializable {
         tvProjects.getSelectionModel().selectedItemProperty().addListener((ChangeListener)(observable, oldValue, newValue) -> {
                 selectedProject = (Project)newValue;
                 LoadTasks();
+        });
+
+        tvTasks.getSelectionModel().selectedItemProperty().addListener((ChangeListener)(observable, oldValue, newValue) -> {
+            selectedTask = (Task)newValue;
+            LoadTasks();
         });
 
         LoadProjects();
@@ -134,9 +138,36 @@ public class HomeController extends BaseController implements Initializable {
     //<editor-fold desc="Task functionality">
 
     @FXML
-    private void handleDeleteTask() {
-        Task selectedTask = getSelectedTask();
+    private void handleNewTask() {
 
+        logger.debug("handleNewTask");
+        Task task = new Task();
+        if (mainApp.showTaskDialog(task)) {
+            //taskDataManager.add(task);
+            logger.debug("Task " + task.getTaskTitle() + " is created");
+        }
+    }
+
+    @FXML
+    private void handleEditTask() {
+
+        logger.debug("handleNewTask");
+        if (selectedTask != null) {
+            if (mainApp.showTaskDialog(selectedTask)) {
+                //taskDataManager.update(selectedTask);
+                LoadTasks();
+                tvTasks.getSelectionModel().selectLast();
+                logger.debug("Task " + selectedTask.getTaskTitle() + " is edited");
+            }
+        } else {
+            logger.debug("No task selected for editing");
+        }
+    }
+
+    @FXML
+    private void handleDeleteTask() {
+
+        logger.debug("handleDeleteTask");
         if (selectedTask != null) {
             //dataManager.remove(selectedTask);
             selectedProject.getTasks().remove(selectedTask);
@@ -147,35 +178,6 @@ public class HomeController extends BaseController implements Initializable {
         } else {
             logger.debug("No task selected for removing");
         }
-    }
-
-    @FXML
-    private void handleEditTask() {
-        Task selectedTask = getSelectedTask();
-
-        if (selectedTask != null) {
-            logger.debug("Task " + selectedTask.getTaskTitle() + " is editing");
-            //taskDataManager.update(selectedTask);
-            LoadTasks();
-            tvTasks.getSelectionModel().selectLast();
-        } else {
-            logger.debug("No task selected for editing");
-        }
-    }
-
-    @FXML
-    private void handleNewTask() {
-        Task task = new Task();
-        task.setTaskTitle("Task" + i);
-        task.setTaskDesc("Desc" + i);
-        i++;
-
-        //taskDataManager.add(task);
-        logger.debug("Task " + task.getTaskTitle() + " is created");
-    }
-
-    private Task getSelectedTask() {
-        return (Task)tvTasks.getSelectionModel().getSelectedItem();
     }
 
     private void LoadTasks() {
