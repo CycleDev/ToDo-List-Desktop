@@ -62,11 +62,17 @@ public class HomeController extends BaseController implements Initializable {
         }
 
         tvProjects.getSelectionModel().selectedItemProperty().addListener((ChangeListener)(observable, oldValue, newValue) -> {
-                selectedProject = (Project)newValue;
-                LoadTasks();
+            logger.debug("Project selection is changed");
+            if (newValue == null)
+                return;
+            selectedProject = (Project)newValue;
+            LoadTasks();
         });
 
         tvTasks.getSelectionModel().selectedItemProperty().addListener((ChangeListener)(observable, oldValue, newValue) -> {
+            logger.debug("Task selection is changed");
+            if (newValue == null)
+                return;
             selectedTask = (Task)newValue;
             LoadTasks();
         });
@@ -85,9 +91,9 @@ public class HomeController extends BaseController implements Initializable {
 
         logger.debug("Add project");
         Project project = new Project();
-        if (mainApp.showProjectDialog(project))
-        {
+        if (mainApp.showProjectDialog(project))        {
             dataManager.add(project);
+            LoadProjects();
             logger.debug("Project " + project.getProjectTitle() + " is created");
         }
 
@@ -100,6 +106,7 @@ public class HomeController extends BaseController implements Initializable {
         if (selectedProject != null) {
             if (mainApp.showProjectDialog(selectedProject)){
                 dataManager.update(selectedProject);
+                LoadProjects();
                 logger.debug("Project " + selectedProject.getProjectTitle() + " is edited");
             }
 		} else {
@@ -114,6 +121,7 @@ public class HomeController extends BaseController implements Initializable {
         logger.debug("Remove project");
         if (selectedProject != null) {
             dataManager.remove(selectedProject);
+            LoadProjects();
             logger.debug("Project " + selectedProject.getProjectTitle() + " is removed");
         } else {
             logger.debug("No project selected for deleting");
@@ -122,15 +130,9 @@ public class HomeController extends BaseController implements Initializable {
     }
 
     private void LoadProjects() {
-        ObservableList<Project> projectData = FXCollections.observableArrayList();
 
-        List<Project> projectList = dataManager.getAll();
+        tvProjects.setItems(FXCollections.observableList(dataManager.getAll()));
 
-        for (Object project : projectList) {
-            projectData.add((Project) project);
-        }
-
-        tvProjects.setItems(projectData);
     }
 
     //</editor-fold>
