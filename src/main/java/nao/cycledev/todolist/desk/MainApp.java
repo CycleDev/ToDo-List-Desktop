@@ -14,6 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class MainApp extends Application {
 
@@ -48,6 +50,7 @@ public class MainApp extends Application {
         try {
             // Load the fxml file and create a new stage for the popup
             FXMLLoader loader = new FXMLLoader();
+            loader.setResources(ResourceBundle.getBundle("lang", new Locale("en", "EN")));
             AnchorPane page = (AnchorPane)loader.load(getClass().getResourceAsStream("/fxml/EventDialog.fxml"));
             Stage dialogStage = new Stage();
             dialogStage.setTitle("Project");
@@ -97,7 +100,6 @@ public class MainApp extends Application {
             return controller.isOkClicked();
 
         } catch (IOException e) {
-            // Exception gets thrown if the fxml file could not be loaded
             logger.error(e.getMessage());
             return false;
         }
